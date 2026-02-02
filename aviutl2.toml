@@ -1,0 +1,15 @@
+#!schema: ./development/aviutl2.schema.json
+# 設定ファイルについては https://github.com/sevenc-nanashi/aviutl2-cli を参照してください。
+[project]
+name = "tinted-aviutl2"
+version = "0.1.0"
+
+[artifacts."style.conf"]
+build = "tinted-builder-rust.exe build ."
+source = "./generated/base16-onedark-dark.style.conf"
+destination = "style.conf"
+
+[development]
+aviutl2_version = "2.00beta31"
+
+[release]
