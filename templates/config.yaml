@@ -1,3 +1,8 @@
 default:
   supported-systems: [base16]
   filename: "generated/{{ scheme-system }}-{{ scheme-slug }}.style.conf"
+
+informations:
+  supported-systems: [base16]
+  filename: "src/themes/{{ scheme-system }}-{{ scheme-slug }}.json"
+

@@ -1,0 +1,8 @@
+{
+  "background": "181616",
+  "border": "625e5a",
+  "foreground": "c5c9c5",
+  "name": "Kanagawa Dragon",
+  "author": "Stefan Weigl-Bosker (https://github.com/sweiglbosker), Tommaso Laurenzi (https://github.com/rebelot/kanagawa.nvim)",
+  "variant": "dark"
+}

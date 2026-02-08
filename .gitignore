@@ -1,1 +1,6 @@
 development
+
+# Added by cargo
+
+/target
+.aviutl2-cli
