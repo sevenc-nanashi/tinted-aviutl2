@@ -10,6 +10,6 @@ source = "./generated/base16-onedark-dark.style.conf"
 destination = "style.conf"
 
 [development]
-aviutl2_version = "2.00beta31"
+aviutl2_version = "2.00beta32"
 
 [release]
