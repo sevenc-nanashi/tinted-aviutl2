@@ -23,6 +23,7 @@ fn color_from_theme(hex: &str, fallback: egui::Color32) -> egui::Color32 {
 pub(crate) struct TintedAviutl2App {
     show_info: bool,
     suppress_info_close_once: bool,
+    search_query: String,
     version: String,
     handle: AviUtl2EframeHandle,
 }
@@ -50,6 +51,7 @@ impl TintedAviutl2App {
         Self {
             show_info: false,
             suppress_info_close_once: false,
+            search_query: String::new(),
             version: env!("CARGO_PKG_VERSION").to_string(),
             handle,
         }
@@ -97,12 +99,35 @@ impl TintedAviutl2App {
 
     fn render_main_panel(&mut self, ctx: &egui::Context) {
         egui::CentralPanel::default().show(ctx, |ui| {
+            ui.horizontal(|ui| {
+                ui.label(tr("検索"));
+                ui.add_sized(
+                    egui::vec2(ui.available_width(), 24.0),
+                    egui::TextEdit::singleline(&mut self.search_query)
+                        .hint_text(tr("テーマ名または作者名で検索")),
+                );
+            });
+            ui.add_space(8.0);
+
+            let query = self.search_query.trim().to_lowercase();
+            let mut has_results = false;
             egui::ScrollArea::vertical()
                 .auto_shrink([false; 2])
                 .show(ui, |ui| {
                     for theme in crate::theme::THEMES.iter() {
+                        if !query.is_empty()
+                            && !theme.name.to_lowercase().contains(&query)
+                            && !theme.author.to_lowercase().contains(&query)
+                        {
+                            continue;
+                        }
+                        has_results = true;
                         self.render_theme_card(ui, theme);
                         ui.add_space(8.0);
+                    }
+
+                    if !has_results {
+                        ui.label(tr("一致するテーマがありません"));
                     }
                 });
         });

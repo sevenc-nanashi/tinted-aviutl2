@@ -1,7 +1,7 @@
 {
   "background": "103c48",
   "border": "72898f",
-  "foreground": "adbcbc",
+  "foreground": "cad8d9",
   "name": "selenized-dark",
   "author": "Jan Warchol (https://github.com/jan-warchol/selenized) / adapted to base16 by ali",
   "variant": "dark"

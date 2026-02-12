@@ -1,7 +1,7 @@
 {
   "background": "eeeeee",
   "border": "858585",
-  "foreground": "5e5e5e",
+  "foreground": "444444",
   "name": "PaperColor Light",
   "author": "Jon Leopard (http://github.com/jonleopard), Tinted Theming (https://github.com/tinted-theming), based on PaperColor Theme (https://github.com/NLKNguyen/papercolor-theme)",
   "variant": "light"

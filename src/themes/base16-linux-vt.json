@@ -1,7 +1,7 @@
 {
   "background": "000000",
   "border": "555555",
-  "foreground": "aaaaaa",
+  "foreground": "ffffff",
   "name": "Linux VT",
   "author": "j-c-m (https://github.com/j-c-m/)",
   "variant": "dark"

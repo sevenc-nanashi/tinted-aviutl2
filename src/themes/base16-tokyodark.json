@@ -1,7 +1,7 @@
 {
   "background": "11121d",
   "border": "353945",
-  "foreground": "a0a8cd",
+  "foreground": "bcc2dc",
   "name": "Tokyodark",
   "author": "Jamy Golden (https://github.com/JamyGolden), Based on Tokyodark.nvim (https://github.com/tiagovla/tokyodark.nvim)",
   "variant": "dark"
