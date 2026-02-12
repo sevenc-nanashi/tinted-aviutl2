@@ -1,5 +1,7 @@
 # tinted-aviutl2
 
+[![AviUtl2 Catalog](https://aviutl2-catalog-badge.sevenc7c.workers.dev/badge/v/sevenc-nanashi.tinted-aviutl2)](https://aviutl2-catalog-badge.sevenc7c.workers.dev/package/sevenc-nanashi.tinted-aviutl2)
+
 [tinted-theming](https://github.com/tinted-theming/home#tinted-theming-all-your-themes-everywhere-) をAviUtl2で使うためのテンプレート。
 
 ## 使い方

@@ -1,4 +1,4 @@
-#:schema ./development/aviutl2.schema.json
+#:schema ./.aviutl2-cli/aviutl2.schema.json
 # 設定ファイルについては https://github.com/sevenc-nanashi/aviutl2-cli を参照してください。
 
 [project]
@@ -33,3 +33,5 @@ destination = "Language/English.tinted-aviutl2.aul2"
 aviutl2_version = "2.00beta32"
 
 [release]
+prebuild = ["cargo about generate ./about.hbs -o ./release/package.txt"]
+package_template = "./release/package.txt"

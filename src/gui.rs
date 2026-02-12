@@ -255,7 +255,7 @@ impl TintedAviutl2App {
             self.install_style(theme).unwrap_or_else(|err| {
                 let _ = native_dialog::DialogBuilder::message()
                     .set_title(tr("エラー"))
-                    .set_text(format!("スタイルのインストールに失敗しました: {err}"))
+                    .set_text(err)
                     .set_owner(&unsafe { crate::EDIT_HANDLE.get_host_app_window() }.unwrap())
                     .alert()
                     .show();
