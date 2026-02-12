@@ -2,9 +2,13 @@
 version = "0.8.4"
 backend = "cargo:cargo-about"
 
+[[tools."cargo:cargo-edit"]]
+version = "0.13.8"
+backend = "cargo:cargo-edit"
+
 [[tools."github:sevenc-nanashi/aviutl2-cli"]]
 version = "0.3.0"
-backend = "github:sevenc-nanashi/aviutl2-cli[bin=au2.exe]"
+backend = "github:sevenc-nanashi/aviutl2-cli"
 "platforms.linux-arm64" = { checksum = "sha256:d4d74683406856cddc894121f3183ee748ccdb6a5ea03da5cadd01c09344023a", url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.3.0/au2-v0.3.0-linux", url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/350298811"}
 "platforms.linux-x64" = { checksum = "sha256:d4d74683406856cddc894121f3183ee748ccdb6a5ea03da5cadd01c09344023a", url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.3.0/au2-v0.3.0-linux", url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/350298811"}
 "platforms.windows-x64" = { checksum = "sha256:21e963debd482cd0ba87805bb922ba4931f362eca29cc777057178f4b8abfc8d", url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.3.0/au2-v0.3.0-windows.exe", url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/350298945"}
