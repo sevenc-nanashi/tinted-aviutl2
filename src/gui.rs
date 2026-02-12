@@ -1,4 +1,5 @@
 use aviutl2_eframe::{AviUtl2EframeHandle, eframe, egui};
+use std::io::Write;
 
 fn tr(text: &str) -> String {
     aviutl2::config::translate(text).unwrap_or_else(|_| text.to_string())
@@ -226,20 +227,40 @@ impl TintedAviutl2App {
                 .show()
                 .unwrap_or(false)
         {
-            let data_dir = aviutl2::config::app_data_path();
-            let style_conf_path = data_dir.join("style.conf");
-            let mut style_conf = std::fs::File::create(&style_conf_path).unwrap();
-            std::io::Write::write_all(&mut style_conf, theme.load().as_bytes()).unwrap();
-
-            if native_dialog::DialogBuilder::message()
-                .set_title(tr("Tinted AviUtl2"))
-                .set_text(tr("テーマを適用しました。AviUtl2を再起動しますか？"))
-                .confirm()
-                .show()
-                .unwrap_or(false)
-            {
-                crate::EDIT_HANDLE.get().unwrap().restart_host_app();
-            }
+            self.install_style(theme).unwrap_or_else(|err| {
+                let _ = native_dialog::DialogBuilder::message()
+                    .set_title(tr("エラー"))
+                    .set_text(format!("スタイルのインストールに失敗しました: {err}"))
+                    .set_owner(&unsafe { crate::EDIT_HANDLE.get_host_app_window() }.unwrap())
+                    .alert()
+                    .show();
+            });
         }
+    }
+
+    fn install_style(&self, theme: &crate::theme::Theme) -> aviutl2::AnyResult<()> {
+        let data_dir = aviutl2::config::app_data_path();
+        let style_conf_path = data_dir.join("style.conf");
+        let existing_style_conf = if style_conf_path.try_exists()? {
+            std::fs::read_to_string(&style_conf_path)?
+        } else {
+            String::new()
+        };
+        let mut style_conf = std::fs::File::create(&style_conf_path)?;
+        let merged_style = crate::merge_style::merge_style(&existing_style_conf, &theme.load());
+        style_conf.write_all(merged_style.as_bytes())?;
+
+        if native_dialog::DialogBuilder::message()
+            .set_title(tr("Tinted AviUtl2"))
+            .set_text(tr("テーマを適用しました。AviUtl2を再起動しますか？"))
+            .set_owner(&unsafe { crate::EDIT_HANDLE.get_host_app_window() }.unwrap())
+            .confirm()
+            .show()
+            .unwrap_or(false)
+        {
+            crate::EDIT_HANDLE.restart_host_app();
+        }
+
+        Ok(())
     }
 }

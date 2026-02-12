@@ -1,7 +1,9 @@
 mod gui;
+pub mod merge_style;
 mod theme;
 
-pub static EDIT_HANDLE: std::sync::OnceLock<aviutl2::generic::EditHandle> = std::sync::OnceLock::new();
+pub static EDIT_HANDLE: aviutl2::generic::GlobalEditHandle =
+    aviutl2::generic::GlobalEditHandle::new();
 
 #[aviutl2::plugin(GenericPlugin)]
 struct TintedAviutl2 {
@@ -20,9 +22,7 @@ impl aviutl2::generic::GenericPlugin for TintedAviutl2 {
         registry
             .register_window_client("Tinted AviUtl2", &self.window)
             .unwrap();
-        EDIT_HANDLE
-            .set(registry.create_edit_handle())
-            .unwrap();
+        EDIT_HANDLE.init(registry.create_edit_handle());
     }
 }
 
