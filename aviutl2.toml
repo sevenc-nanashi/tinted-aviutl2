@@ -1,13 +1,32 @@
-#!schema: ./development/aviutl2.schema.json
+#:schema ./development/aviutl2.schema.json
 # 設定ファイルについては https://github.com/sevenc-nanashi/aviutl2-cli を参照してください。
 [project]
 name = "tinted-aviutl2"
 version = "0.1.0"
 
-[artifacts."style.conf"]
-build = "tinted-builder-rust.exe build ."
-source = "./generated/base16-onedark-dark.style.conf"
-destination = "style.conf"
+[artifacts."tinted-aviutl2.aux2"]
+enabled = true
+destination = "Plugin/tinted-aviutl2.aux2"
+
+[artifacts."tinted-aviutl2.aux2".profiles.debug]
+build = "cargo build"
+source = "target/debug/tinted_aviutl2.dll"
+enabled = true
+
+[artifacts."tinted-aviutl2.aux2".profiles.release]
+build = ["cargo build --release"]
+source = "target/release/tinted_aviutl2.dll"
+enabled = true
+
+[artifacts."English.aul2"]
+enabled = false
+source = "https://raw.githubusercontent.com/aviutl2/aviutl2_community_translation/refs/heads/main/locales/community_en.aul2"
+destination = "Language/English.aul2"
+profiles = { debug = { enabled = true } }
+
+[artifacts."English.tinted-aviutl2.aul2"]
+source = "./i18n/English.tinted-aviutl2.aul2"
+destination = "Language/English.tinted-aviutl2.aul2"
 
 [development]
 aviutl2_version = "2.00beta32"
