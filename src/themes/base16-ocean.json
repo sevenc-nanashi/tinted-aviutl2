@@ -3,6 +3,7 @@
   "border": "65737e",
   "foreground": "c0c5ce",
   "name": "Ocean",
+  "slug": "ocean",
   "author": "Chris Kempson (http://chriskempson.com)",
   "variant": "dark"
 }

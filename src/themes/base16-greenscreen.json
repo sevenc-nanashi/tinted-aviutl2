@@ -3,6 +3,7 @@
   "border": "007700",
   "foreground": "00bb00",
   "name": "Green Screen",
+  "slug": "greenscreen",
   "author": "Chris Kempson (http://chriskempson.com)",
   "variant": "dark"
 }

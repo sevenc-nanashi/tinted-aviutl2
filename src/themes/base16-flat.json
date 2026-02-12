@@ -3,6 +3,7 @@
   "border": "95a5a6",
   "foreground": "e0e0e0",
   "name": "Flat",
+  "slug": "flat",
   "author": "Chris Kempson (http://chriskempson.com)",
   "variant": "dark"
 }

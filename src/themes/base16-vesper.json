@@ -3,6 +3,7 @@
   "border": "333333",
   "foreground": "b7b7b7",
   "name": "Vesper",
+  "slug": "vesper",
   "author": "FormalSnake (https://github.com/formalsnake)",
   "variant": "dark"
 }

@@ -3,6 +3,7 @@
   "border": "6e7681",
   "foreground": "c9d1d9",
   "name": "Github Dark",
+  "slug": "github-dark",
   "author": "Tinted Theming (https://github.com/tinted-theming)",
   "variant": "dark"
 }

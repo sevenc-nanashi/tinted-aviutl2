@@ -3,6 +3,7 @@
   "border": "969896",
   "foreground": "d6d6d6",
   "name": "Yesterday",
+  "slug": "yesterday",
   "author": "FroZnShiva (https://github.com/FroZnShiva)",
   "variant": "dark"
 }

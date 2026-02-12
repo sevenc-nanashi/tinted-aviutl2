@@ -3,6 +3,7 @@
   "border": "9197a1",
   "foreground": "474752",
   "name": "Edge Light",
+  "slug": "edge-light",
   "author": "cjayross (https://github.com/cjayross), Tinted Theming (https://github.com/tinted-theming)",
   "variant": "light"
 }

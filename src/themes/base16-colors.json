@@ -3,6 +3,7 @@
   "border": "777777",
   "foreground": "bbbbbb",
   "name": "Colors",
+  "slug": "colors",
   "author": "mrmrs (http://clrs.cc)",
   "variant": "dark"
 }

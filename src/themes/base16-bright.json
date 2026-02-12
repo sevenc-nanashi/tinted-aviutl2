@@ -3,6 +3,7 @@
   "border": "b0b0b0",
   "foreground": "e0e0e0",
   "name": "Bright",
+  "slug": "bright",
   "author": "Chris Kempson (http://chriskempson.com)",
   "variant": "dark"
 }

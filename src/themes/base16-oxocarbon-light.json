@@ -3,6 +3,7 @@
   "border": "a1acba",
   "foreground": "525f70",
   "name": "Oxocarbon Light",
+  "slug": "oxocarbon-light",
   "author": "shaunsingh/IBM, Tinted Theming (https://github.com/tinted-theming)",
   "variant": "light"
 }

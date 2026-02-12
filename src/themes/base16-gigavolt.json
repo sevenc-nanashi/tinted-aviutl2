@@ -3,6 +3,7 @@
   "border": "a1d2e6",
   "foreground": "e9e7e1",
   "name": "Gigavolt",
+  "slug": "gigavolt",
   "author": "Aidan Swope (http://github.com/Whillikers)",
   "variant": "dark"
 }

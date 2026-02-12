@@ -3,6 +3,7 @@
   "border": "ffbee3",
   "foreground": "f15c99",
   "name": "pandora",
+  "slug": "pandora",
   "author": "Cassandra Fox",
   "variant": "dark"
 }

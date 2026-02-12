@@ -3,6 +3,7 @@
   "border": "75808a",
   "foreground": "323b43",
   "name": "Embers Light",
+  "slug": "embers-light",
   "author": "Jannik Siebert (https://github.com/janniks)",
   "variant": "light"
 }

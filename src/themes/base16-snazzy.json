@@ -3,6 +3,7 @@
   "border": "78787e",
   "foreground": "e2e4e5",
   "name": "Snazzy",
+  "slug": "snazzy",
   "author": "Chawye Hsu (https://github.com/chawyehsu), based on Hyper Snazzy Theme (https://github.com/sindresorhus/hyper-snazzy)",
   "variant": "dark"
 }

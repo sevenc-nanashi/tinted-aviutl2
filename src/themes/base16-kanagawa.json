@@ -3,6 +3,7 @@
   "border": "54546d",
   "foreground": "dcd7ba",
   "name": "Kanagawa",
+  "slug": "kanagawa",
   "author": "Tommaso Laurenzi (https://github.com/rebelot)",
   "variant": "dark"
 }

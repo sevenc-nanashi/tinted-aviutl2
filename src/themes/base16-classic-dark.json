@@ -3,6 +3,7 @@
   "border": "505050",
   "foreground": "d0d0d0",
   "name": "Classic Dark",
+  "slug": "classic-dark",
   "author": "Jason Heeris (http://heeris.id.au)",
   "variant": "dark"
 }

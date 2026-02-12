@@ -3,6 +3,7 @@
   "border": "655f6d",
   "foreground": "8b8792",
   "name": "Atelier Cave",
+  "slug": "atelier-cave",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "dark"
 }

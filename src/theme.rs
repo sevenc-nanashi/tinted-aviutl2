@@ -10,6 +10,7 @@ pub struct Theme {
     #[serde(skip)]
     file: String,
 
+    pub slug: String,
     pub name: String,
     pub author: String,
 
@@ -40,7 +41,7 @@ pub static THEMES: std::sync::LazyLock<Vec<Theme>> = std::sync::LazyLock::new(||
                 .unwrap()
                 .to_string_lossy()
                 .to_string();
-            themes.push(aviutl2::ldbg!(theme));
+            themes.push(theme);
         }
     }
 

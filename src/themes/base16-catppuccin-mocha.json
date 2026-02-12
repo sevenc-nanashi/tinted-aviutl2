@@ -3,6 +3,7 @@
   "border": "6c7086",
   "foreground": "cdd6f4",
   "name": "Catppuccin Mocha",
+  "slug": "catppuccin-mocha",
   "author": "https://github.com/catppuccin/catppuccin",
   "variant": "dark"
 }

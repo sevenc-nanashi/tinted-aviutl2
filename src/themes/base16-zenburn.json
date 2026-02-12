@@ -3,6 +3,7 @@
   "border": "6f6f6f",
   "foreground": "dcdccc",
   "name": "Zenburn",
+  "slug": "zenburn",
   "author": "elnawe",
   "variant": "dark"
 }

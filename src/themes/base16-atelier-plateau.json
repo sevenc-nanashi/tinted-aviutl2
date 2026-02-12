@@ -3,6 +3,7 @@
   "border": "655d5d",
   "foreground": "8a8585",
   "name": "Atelier Plateau",
+  "slug": "atelier-plateau",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "dark"
 }

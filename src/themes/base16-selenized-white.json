@@ -3,6 +3,7 @@
   "border": "878787",
   "foreground": "474747",
   "name": "selenized-white",
+  "slug": "selenized-white",
   "author": "Jan Warchol (https://github.com/jan-warchol/selenized) / adapted to base16 by ali",
   "variant": "light"
 }

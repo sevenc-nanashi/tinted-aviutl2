@@ -3,6 +3,7 @@
   "border": "b8b8b8",
   "foreground": "383838",
   "name": "Sagelight",
+  "slug": "sagelight",
   "author": "Carter Veldhuizen",
   "variant": "light"
 }

@@ -3,6 +3,7 @@
   "border": "748cd6",
   "foreground": "a3ace1",
   "name": "Moonlight",
+  "slug": "moonlight",
   "author": "Jeremy Swinarton (https://github.com/jswinarton)",
   "variant": "dark"
 }

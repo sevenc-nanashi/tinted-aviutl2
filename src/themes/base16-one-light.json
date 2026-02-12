@@ -3,6 +3,7 @@
   "border": "a0a1a7",
   "foreground": "383a42",
   "name": "One Light",
+  "slug": "one-light",
   "author": "Daniel Pfeifer (http://github.com/purpleKarrot)",
   "variant": "light"
 }

@@ -3,6 +3,7 @@
   "border": "6c6823",
   "foreground": "948e48",
   "name": "Marrakesh",
+  "slug": "marrakesh",
   "author": "Alexandre Gavioli (http://github.com/Alexx2/)",
   "variant": "dark"
 }

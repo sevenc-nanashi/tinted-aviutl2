@@ -3,6 +3,7 @@
   "border": "bebebe",
   "foreground": "636363",
   "name": "Penumbra Light",
+  "slug": "penumbra-light",
   "author": "Zachary Weiss (https://github.com/zacharyweiss)",
   "variant": "light"
 }

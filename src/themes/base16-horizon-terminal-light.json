@@ -3,6 +3,7 @@
   "border": "bdb3b1",
   "foreground": "403c3d",
   "name": "Horizon Terminal Light",
+  "slug": "horizon-terminal-light",
   "author": "Michaël Ball (http://github.com/michael-ball/)",
   "variant": "light"
 }

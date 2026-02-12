@@ -3,6 +3,7 @@
   "border": "c0c0c0",
   "foreground": "808080",
   "name": "Windows NT Light",
+  "slug": "windows-nt-light",
   "author": "Fergus Collins (https://github.com/ferguscollins)",
   "variant": "light"
 }

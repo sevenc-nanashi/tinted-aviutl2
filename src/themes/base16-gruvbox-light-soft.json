@@ -3,6 +3,7 @@
   "border": "bdae93",
   "foreground": "504945",
   "name": "Gruvbox light, soft",
+  "slug": "gruvbox-light-soft",
   "author": "Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)",
   "variant": "light"
 }

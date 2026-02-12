@@ -3,6 +3,7 @@
   "border": "767676",
   "foreground": "cccccc",
   "name": "Windows 10",
+  "slug": "windows-10",
   "author": "Fergus Collins (https://github.com/ferguscollins)",
   "variant": "dark"
 }

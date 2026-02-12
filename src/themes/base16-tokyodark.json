@@ -3,6 +3,7 @@
   "border": "353945",
   "foreground": "a0a8cd",
   "name": "Tokyodark",
+  "slug": "tokyodark",
   "author": "Jamy Golden (https://github.com/JamyGolden), Based on Tokyodark.nvim (https://github.com/tiagovla/tokyodark.nvim)",
   "variant": "dark"
 }

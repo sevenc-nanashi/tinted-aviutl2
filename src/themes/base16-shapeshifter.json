@@ -3,6 +3,7 @@
   "border": "555555",
   "foreground": "102015",
   "name": "Shapeshifter",
+  "slug": "shapeshifter",
   "author": "Tyler Benziger (http://tybenz.com)",
   "variant": "light"
 }

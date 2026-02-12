@@ -3,6 +3,7 @@
   "border": "969896",
   "foreground": "c5c8c6",
   "name": "Google Dark",
+  "slug": "google-dark",
   "author": "Seth Wright (http://sethawright.com)",
   "variant": "dark"
 }

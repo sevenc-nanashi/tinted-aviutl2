@@ -3,6 +3,7 @@
   "border": "3f4944",
   "foreground": "9ea7a6",
   "name": "Codeschool",
+  "slug": "codeschool",
   "author": "blockloop",
   "variant": "dark"
 }

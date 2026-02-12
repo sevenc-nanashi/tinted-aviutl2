@@ -3,6 +3,7 @@
   "border": "75715e",
   "foreground": "f8f8f2",
   "name": "Monokai",
+  "slug": "monokai",
   "author": "Wimer Hazenberg (http://www.monokai.nl)",
   "variant": "dark"
 }

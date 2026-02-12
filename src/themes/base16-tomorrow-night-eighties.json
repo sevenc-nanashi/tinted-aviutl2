@@ -3,6 +3,7 @@
   "border": "999999",
   "foreground": "cccccc",
   "name": "Tomorrow Night Eighties",
+  "slug": "tomorrow-night-eighties",
   "author": "Chris Kempson (http://chriskempson.com)",
   "variant": "dark"
 }

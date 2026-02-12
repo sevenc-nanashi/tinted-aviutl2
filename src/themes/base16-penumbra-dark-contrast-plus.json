@@ -3,6 +3,7 @@
   "border": "636363",
   "foreground": "cecece",
   "name": "Penumbra Dark Contrast Plus",
+  "slug": "penumbra-dark-contrast-plus",
   "author": "Zachary Weiss (https://github.com/zacharyweiss)",
   "variant": "dark"
 }

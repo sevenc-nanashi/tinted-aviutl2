@@ -3,6 +3,7 @@
   "border": "5f7368",
   "foreground": "a7b8af",
   "name": "Chicago Night",
+  "slug": "chicago-night",
   "author": "Wendell, Ryan <ryanjwendell@gmail.com>",
   "variant": "dark"
 }

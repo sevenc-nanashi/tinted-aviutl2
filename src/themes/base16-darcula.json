@@ -3,6 +3,7 @@
   "border": "606366",
   "foreground": "a9b7c6",
   "name": "Darcula",
+  "slug": "darcula",
   "author": "jetbrains",
   "variant": "dark"
 }

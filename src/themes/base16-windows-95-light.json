@@ -3,6 +3,7 @@
   "border": "a8a8a8",
   "foreground": "545454",
   "name": "Windows 95 Light",
+  "slug": "windows-95-light",
   "author": "Fergus Collins (https://github.com/ferguscollins)",
   "variant": "light"
 }

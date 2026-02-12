@@ -3,6 +3,7 @@
   "border": "737171",
   "foreground": "d9d8d8",
   "name": "London Tube",
+  "slug": "tube",
   "author": "Jan T. Sott",
   "variant": "dark"
 }

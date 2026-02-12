@@ -3,6 +3,7 @@
   "border": "7c6f64",
   "foreground": "ddc7a1",
   "name": "Gruvbox Material Dark, Soft",
+  "slug": "gruvbox-material-dark-soft",
   "author": "Mayush Kumar (https://github.com/MayushKumar), sainnhe (https://github.com/sainnhe/gruvbox-material-vscode)",
   "variant": "dark"
 }

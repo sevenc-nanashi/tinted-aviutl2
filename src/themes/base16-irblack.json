@@ -3,6 +3,7 @@
   "border": "6c6c66",
   "foreground": "b5b3aa",
   "name": "IR Black",
+  "slug": "irblack",
   "author": "Timothée Poisot (http://timotheepoisot.fr)",
   "variant": "dark"
 }

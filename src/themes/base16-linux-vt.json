@@ -3,6 +3,7 @@
   "border": "555555",
   "foreground": "aaaaaa",
   "name": "Linux VT",
+  "slug": "linux-vt",
   "author": "j-c-m (https://github.com/j-c-m/)",
   "variant": "dark"
 }

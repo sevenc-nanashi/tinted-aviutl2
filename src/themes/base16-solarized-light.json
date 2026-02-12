@@ -3,6 +3,7 @@
   "border": "839496",
   "foreground": "586e75",
   "name": "Solarized Light",
+  "slug": "solarized-light",
   "author": "Ethan Schoonover (modified by aramisgithub)",
   "variant": "light"
 }

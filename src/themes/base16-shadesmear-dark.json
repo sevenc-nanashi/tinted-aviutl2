@@ -3,6 +3,7 @@
   "border": "c0c0c0",
   "foreground": "dbdbdb",
   "name": "ShadeSmear Dark",
+  "slug": "shadesmear-dark",
   "author": "Kyle Giammarco (http://kyle.giammar.co)",
   "variant": "dark"
 }

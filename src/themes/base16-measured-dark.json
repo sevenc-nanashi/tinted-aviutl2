@@ -3,6 +3,7 @@
   "border": "ababab",
   "foreground": "dcdcdc",
   "name": "Measured Dark",
+  "slug": "measured-dark",
   "author": "Measured (https://measured.co)",
   "variant": "dark"
 }

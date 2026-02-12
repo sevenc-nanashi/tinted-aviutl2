@@ -3,6 +3,7 @@
   "border": "b4b7b4",
   "foreground": "373b41",
   "name": "Google Light",
+  "slug": "google-light",
   "author": "Seth Wright (http://sethawright.com)",
   "variant": "light"
 }

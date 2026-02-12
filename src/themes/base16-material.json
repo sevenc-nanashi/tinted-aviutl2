@@ -3,6 +3,7 @@
   "border": "546e7a",
   "foreground": "eeffff",
   "name": "Material",
+  "slug": "material",
   "author": "Nate Peterson",
   "variant": "dark"
 }

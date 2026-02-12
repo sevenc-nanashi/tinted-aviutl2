@@ -3,6 +3,7 @@
   "border": "7c8d7c",
   "foreground": "00ff00",
   "name": "Digital Rain",
+  "slug": "digital-rain",
   "author": "Nathan Byrd (https://github.com/cognitivegears)",
   "variant": "dark"
 }

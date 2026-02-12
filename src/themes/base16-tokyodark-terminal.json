@@ -3,6 +3,7 @@
   "border": "282c34",
   "foreground": "a0a8cd",
   "name": "Tokyodark Terminal",
+  "slug": "tokyodark-terminal",
   "author": "Tiagovla (https://github.com/tiagovla/)",
   "variant": "dark"
 }

@@ -26,6 +26,7 @@ pub(crate) struct TintedAviutl2App {
     search_query: String,
     version: String,
     handle: AviUtl2EframeHandle,
+    current_theme: Option<crate::theme::Theme>,
 }
 
 impl TintedAviutl2App {
@@ -48,12 +49,14 @@ impl TintedAviutl2App {
         });
         cc.egui_ctx.set_fonts(fonts);
 
+        aviutl2::ldbg!(Self::detect_current_theme());
         Self {
             show_info: false,
             suppress_info_close_once: false,
             search_query: String::new(),
             version: env!("CARGO_PKG_VERSION").to_string(),
             handle,
+            current_theme: Self::detect_current_theme(),
         }
     }
 }
@@ -99,6 +102,11 @@ impl TintedAviutl2App {
 
     fn render_main_panel(&mut self, ctx: &egui::Context) {
         egui::CentralPanel::default().show(ctx, |ui| {
+            if let Some(current_theme) = &self.current_theme {
+                ui.label(tr("現在のテーマ:"));
+                self.render_theme_card(ui, current_theme);
+                ui.add_space(16.0);
+            }
             ui.horizontal(|ui| {
                 ui.label(tr("検索"));
                 ui.add_sized(
@@ -288,5 +296,26 @@ impl TintedAviutl2App {
         }
 
         Ok(())
+    }
+
+    fn detect_current_theme() -> Option<crate::theme::Theme> {
+        let data_dir = aviutl2::config::app_data_path();
+        let style_conf_path = data_dir.join("style.conf");
+        let existing_style_conf = if style_conf_path.try_exists().ok()? {
+            std::fs::read_to_string(&style_conf_path).ok()?
+        } else {
+            return None;
+        };
+
+        let slug = lazy_regex::lazy_regex!(r"; -- tinted-aviutl2-scheme-slug: (.+);");
+        if let Some(caps) = slug.captures(&existing_style_conf) {
+            let theme_slug = &caps[1];
+            return crate::theme::THEMES
+                .iter()
+                .find(|theme| theme.slug == theme_slug)
+                .cloned();
+        }
+
+        None
     }
 }

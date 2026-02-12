@@ -3,6 +3,7 @@
   "border": "555753",
   "foreground": "d3d7cf",
   "name": "Tango",
+  "slug": "tango",
   "author": "@Schnouki, based on the Tango Desktop Project",
   "variant": "dark"
 }

@@ -3,6 +3,7 @@
   "border": "7e7777",
   "foreground": "585050",
   "name": "Atelier Plateau Light",
+  "slug": "atelier-plateau-light",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "light"
 }

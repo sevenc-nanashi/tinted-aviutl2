@@ -3,6 +3,7 @@
   "border": "777777",
   "foreground": "cccccc",
   "name": "Decaf",
+  "slug": "decaf",
   "author": "Alex Mirrington (https://github.com/alexmirrington)",
   "variant": "dark"
 }

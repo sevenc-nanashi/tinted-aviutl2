@@ -3,6 +3,7 @@
   "border": "c0aca4",
   "foreground": "473731",
   "name": "Terracotta",
+  "slug": "terracotta",
   "author": "Alexander Rossell Hayes (https://github.com/rossellhayes)",
   "variant": "light"
 }

@@ -3,6 +3,7 @@
   "border": "5a647e",
   "foreground": "e6e1dc",
   "name": "Railscasts",
+  "slug": "railscasts",
   "author": "Ryan Bates (http://railscasts.com)",
   "variant": "dark"
 }

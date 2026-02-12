@@ -3,6 +3,7 @@
   "border": "686a71",
   "foreground": "939599",
   "name": "XCode Dusk",
+  "slug": "xcode-dusk",
   "author": "Elsa Gonsiorowski (https://github.com/gonsie)",
   "variant": "dark"
 }

@@ -3,6 +3,7 @@
   "border": "5f5a60",
   "foreground": "a7a7a7",
   "name": "Circus",
+  "slug": "circus",
   "author": "Stephan Boyer (https://github.com/stepchowfun) and Esther Wang (https://github.com/ewang12)",
   "variant": "dark"
 }
