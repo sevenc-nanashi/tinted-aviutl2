@@ -10,12 +10,12 @@ enabled = true
 destination = "Plugin/tinted-aviutl2.aux2"
 
 [artifacts."tinted-aviutl2.aux2".profiles.debug]
-build = ["tinted-builder-rust build .", "cargo build"]
+build = ["rake generate", "cargo build"]
 source = "target/debug/tinted_aviutl2.dll"
 enabled = true
 
 [artifacts."tinted-aviutl2.aux2".profiles.release]
-build = ["tinted-builder-rust build .", "cargo build --release"]
+build = ["rake generate", "cargo build --release"]
 source = "target/release/tinted_aviutl2.dll"
 enabled = true
 

@@ -3,3 +3,4 @@
 "github:sevenc-nanashi/aviutl2-cli" = { version = "0.3.0", bin = "au2.exe" }
 "cargo:cargo-about" = "latest"
 "cargo:cargo-edit" = "latest"
+ruby = "latest"

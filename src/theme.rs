@@ -21,7 +21,7 @@ pub struct Theme {
 }
 
 static THEME_INFOS: include_dir::Dir = include_dir::include_dir!("$CARGO_MANIFEST_DIR/src/themes");
-static THEME_CONFS: include_dir::Dir = include_dir::include_dir!("$CARGO_MANIFEST_DIR/generated");
+static THEME_CONFS: include_dir::Dir = include_dir::include_dir!("$CARGO_MANIFEST_DIR/themes");
 
 pub static THEMES: std::sync::LazyLock<Vec<Theme>> = std::sync::LazyLock::new(|| {
     let mut themes = Vec::new();

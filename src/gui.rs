@@ -248,6 +248,7 @@ impl TintedAviutl2App {
             && native_dialog::DialogBuilder::message()
                 .set_title(tr("Tinted AviUtl2"))
                 .set_text(tr("このテーマを適用しますか？"))
+                .set_owner(&unsafe { crate::EDIT_HANDLE.get_host_app_window() }.unwrap())
                 .confirm()
                 .show()
                 .unwrap_or(false)
