@@ -1,6 +1,10 @@
-default:
+original:
   supported-systems: [base16]
-  filename: "./intermediate/{{ scheme-system }}-{{ scheme-slug }}.style.conf"
+  filename: "./intermediate/original/{{ scheme-system }}-{{ scheme-slug }}.style.conf"
+
+rainbow:
+  supported-systems: [base16]
+  filename: "./intermediate/rainbow/{{ scheme-system }}-{{ scheme-slug }}.style.conf"
 
 informations:
   supported-systems: [base16]

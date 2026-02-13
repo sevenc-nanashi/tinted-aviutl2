@@ -5,6 +5,26 @@ pub enum ThemeVariant {
     Dark,
 }
 
+#[derive(
+    Debug,
+    Clone,
+    Copy,
+    PartialEq,
+    Eq,
+    Hash,
+    strum::EnumString,
+    strum::EnumIter,
+    strum::Display,
+    serde::Serialize,
+    serde::Deserialize,
+)]
+#[serde(rename_all = "lowercase")]
+#[strum(serialize_all = "kebab-case")]
+pub enum BaseTemplate {
+    Original,
+    Rainbow,
+}
+
 #[derive(Debug, Clone, PartialEq, Eq, Hash, serde::Serialize, serde::Deserialize)]
 pub struct Theme {
     #[serde(skip)]
@@ -48,9 +68,9 @@ pub static THEMES: std::sync::LazyLock<Vec<Theme>> = std::sync::LazyLock::new(||
     themes
 });
 impl Theme {
-    pub fn load(&self) -> String {
+    pub fn load(&self, template: BaseTemplate) -> String {
         let file = THEME_CONFS
-            .get_file(format!("{}.style.conf", self.file))
+            .get_file(format!("{}/{}.style.conf", template, self.file))
             .expect("Failed to get theme config file");
         let content = file
             .contents_utf8()

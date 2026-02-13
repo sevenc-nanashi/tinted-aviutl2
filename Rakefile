@@ -2,11 +2,14 @@
 
 task :generate do
   sh "tinted-builder-rust build ."
-  confs = Dir.glob("./intermediate/*.conf")
+  confs = Dir.glob("./intermediate/{rainbow,original}/*.conf")
   confs.each do |conf|
     content = File.read(conf)
     background = content.match(/Background=([0-9a-f]{6})/)[1]
-    background = [background[0..1], background[2..3], background[4..5]].map { |c| c.to_i(16) }
+    background =
+      [background[0..1], background[2..3], background[4..5]].map do |c|
+        c.to_i(16)
+      end
     content.gsub!(/([0-9a-f]{6})@([0-9]+)%/) do |match|
       hex_color = Regexp.last_match(1)
       tint_level = Regexp.last_match(2).to_i
@@ -18,8 +21,7 @@ task :generate do
       b = (b * (tint_level) + background[2] * (100 - tint_level)) / 100
       format("%02x%02x%02x", r, g, b)
     end
-    File.write("./themes/#{
-      File.basename(conf)
-    }", content)
+    base = conf.split("/")[-2]
+    File.write("./themes/#{base}/#{File.basename(conf)}", content)
   end
 end
