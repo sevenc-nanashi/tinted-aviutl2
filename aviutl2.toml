@@ -35,3 +35,17 @@ aviutl2_version = "2.00beta32"
 [release]
 prebuild = ["cargo about generate ./about.hbs -o ./release/package.txt"]
 package_template = "./release/package.txt"
+
+[catalog]
+id = "sevenc-nanashi.tinted-aviutl2"
+name = "Tinted AviUtl2"
+author = "Nanashi."
+summary = "tinted-theming をAviUtl2で使うプラグイン。"
+type = "common"
+description = { type = "url", url = "https://raw.githubusercontent.com/sevenc-nanashi/tinted-aviutl2/main/README.md" }
+download_source = { type = "github", owner = "sevenc-nanashi", repo = "tinted-aviutl2" }
+homepage = "https://github.com/sevenc-nanashi/tinted-aviutl2"
+license = { type = "MIT", template = false, text = { type = "file", path = "./LICENSE" } }
+original_author = "Tinted Theming"
+niconi_commons_id = "sm45904404"
+tags = ["UI"]
