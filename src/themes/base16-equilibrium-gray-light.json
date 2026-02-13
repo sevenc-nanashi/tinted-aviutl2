@@ -1,8 +1,9 @@
 {
   "background": "f1f1f1",
   "border": "777777",
-  "foreground": "1b1b1b",
+  "foreground": "474747",
   "name": "Equilibrium Gray Light",
+  "slug": "equilibrium-gray-light",
   "author": "Carlo Abelli",
   "variant": "light"
 }

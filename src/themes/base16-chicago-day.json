@@ -1,8 +1,9 @@
 {
   "background": "e8f0ea",
   "border": "8a9a91",
-  "foreground": "1e2a24",
+  "foreground": "364c40",
   "name": "Chicago Day",
+  "slug": "chicago-day",
   "author": "Wendell, Ryan <ryanjwendell@gmail.com>",
   "variant": "light"
 }

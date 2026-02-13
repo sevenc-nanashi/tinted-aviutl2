@@ -1,8 +1,9 @@
 {
   "background": "190134",
   "border": "7b6d8b",
-  "foreground": "feffff",
+  "foreground": "bdb6c5",
   "name": "Heetch Dark",
+  "slug": "heetch",
   "author": "Geoffrey Teale (tealeg@gmail.com)",
   "variant": "dark"
 }

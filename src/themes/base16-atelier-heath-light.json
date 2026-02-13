@@ -1,8 +1,9 @@
 {
   "background": "f7f3f7",
   "border": "9e8f9e",
-  "foreground": "1b181b",
+  "foreground": "695d69",
   "name": "Atelier Heath Light",
+  "slug": "atelier-heath-light",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "light"
 }

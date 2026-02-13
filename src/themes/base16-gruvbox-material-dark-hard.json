@@ -1,8 +1,9 @@
 {
   "background": "202020",
   "border": "5a524c",
-  "foreground": "fbf1c7",
+  "foreground": "ddc7a1",
   "name": "Gruvbox Material Dark, Hard",
+  "slug": "gruvbox-material-dark-hard",
   "author": "Mayush Kumar (https://github.com/MayushKumar), sainnhe (https://github.com/sainnhe/gruvbox-material-vscode)",
   "variant": "dark"
 }

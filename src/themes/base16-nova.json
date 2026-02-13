@@ -1,8 +1,9 @@
 {
   "background": "3c4c55",
   "border": "899ba6",
-  "foreground": "556873",
+  "foreground": "c5d4dd",
   "name": "Nova",
+  "slug": "nova",
   "author": "George Essig (https://github.com/gessig), Trevor D. Miller (https://trevordmiller.com)",
   "variant": "dark"
 }

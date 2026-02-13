@@ -1,8 +1,9 @@
 {
   "background": "282828",
   "border": "4c4c4c",
-  "foreground": "feffff",
+  "foreground": "eeeeee",
   "name": "tender",
+  "slug": "tender",
   "author": "Jacobo Tabernero (https://github/com/jacoborus/tender.vim)",
   "variant": "dark"
 }

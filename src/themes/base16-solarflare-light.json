@@ -1,8 +1,9 @@
 {
   "background": "f5f7fa",
   "border": "85939e",
-  "foreground": "18262f",
+  "foreground": "586875",
   "name": "Solar Flare Light",
+  "slug": "solarflare-light",
   "author": "Chuck Harmston (https://chuck.harmston.ch)",
   "variant": "light"
 }

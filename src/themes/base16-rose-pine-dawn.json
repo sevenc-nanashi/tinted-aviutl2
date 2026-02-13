@@ -1,8 +1,9 @@
 {
   "background": "faf4ed",
   "border": "9893a5",
-  "foreground": "cecacd",
+  "foreground": "575279",
   "name": "Rosé Pine Dawn",
+  "slug": "rose-pine-dawn",
   "author": "Emilia Dunfelt <edun@dunfelt.se>",
   "variant": "light"
 }

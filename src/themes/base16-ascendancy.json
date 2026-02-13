@@ -1,8 +1,9 @@
 {
   "background": "282828",
   "border": "928374",
-  "foreground": "fbf1c7",
+  "foreground": "d5c7a1",
   "name": "Ascendancy",
+  "slug": "ascendancy",
   "author": "EmergentMind (https://github.com/emergentmind/ascendancy-scheme)",
   "variant": "dark"
 }

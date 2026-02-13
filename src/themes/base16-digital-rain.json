@@ -1,8 +1,9 @@
 {
   "background": "000000",
   "border": "7c8d7c",
-  "foreground": "d8e2dc",
+  "foreground": "00ff00",
   "name": "Digital Rain",
+  "slug": "digital-rain",
   "author": "Nathan Byrd (https://github.com/cognitivegears)",
   "variant": "dark"
 }

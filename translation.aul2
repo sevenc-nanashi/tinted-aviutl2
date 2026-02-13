@@ -1,6 +1,15 @@
 [tinted-aviutl2.aux2]
 Tinted AviUtl2=
 プラグイン情報=
+現在のテーマ:=
+Original=
+Rainbow=
+配色:=
+オブジェクトの色を元のAviUtl2風にします。=
+オブジェクトの色を種類ごとに変更します。=
+検索=
+テーマ名または作者名で検索=
+一致するテーマがありません=
 バージョン: {version}=
 Tinted ThemesのAviUtl2移植版。=
 開発者:=

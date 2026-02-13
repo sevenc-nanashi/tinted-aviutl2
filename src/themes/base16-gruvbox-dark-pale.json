@@ -1,8 +1,9 @@
 {
   "background": "262626",
   "border": "8a8a8a",
-  "foreground": "ebdbb2",
+  "foreground": "dab997",
   "name": "Gruvbox dark, pale",
+  "slug": "gruvbox-dark-pale",
   "author": "Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)",
   "variant": "dark"
 }

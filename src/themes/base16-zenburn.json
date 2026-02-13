@@ -1,8 +1,9 @@
 {
   "background": "383838",
   "border": "6f6f6f",
-  "foreground": "ffffff",
+  "foreground": "dcdccc",
   "name": "Zenburn",
+  "slug": "zenburn",
   "author": "elnawe",
   "variant": "dark"
 }

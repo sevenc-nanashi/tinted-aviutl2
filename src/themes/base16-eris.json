@@ -1,8 +1,9 @@
 {
   "background": "0a0920",
   "border": "333773",
-  "foreground": "9aaae5",
+  "foreground": "606bac",
   "name": "eris",
+  "slug": "eris",
   "author": "ed (https://codeberg.org/ed), Tinted Theming (https://github.com/tinted-theming)",
   "variant": "dark"
 }

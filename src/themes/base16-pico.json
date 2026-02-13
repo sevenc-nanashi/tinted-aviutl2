@@ -1,8 +1,9 @@
 {
   "background": "000000",
   "border": "008751",
-  "foreground": "fff1e8",
+  "foreground": "5f574f",
   "name": "Pico",
+  "slug": "pico",
   "author": "PICO-8 (http://www.lexaloffle.com/pico-8.php)",
   "variant": "dark"
 }

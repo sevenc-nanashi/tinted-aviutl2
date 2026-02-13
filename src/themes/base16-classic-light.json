@@ -1,8 +1,9 @@
 {
   "background": "f5f5f5",
   "border": "b0b0b0",
-  "foreground": "151515",
+  "foreground": "303030",
   "name": "Classic Light",
+  "slug": "classic-light",
   "author": "Jason Heeris (http://heeris.id.au)",
   "variant": "light"
 }

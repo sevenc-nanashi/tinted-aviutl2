@@ -1,8 +1,9 @@
 {
   "background": "000000",
   "border": "593380",
-  "foreground": "a366ff",
+  "foreground": "b08ae6",
   "name": "Dark Violet",
+  "slug": "darkviolet",
   "author": "ruler501 (https://github.com/ruler501/base16-darkviolet)",
   "variant": "dark"
 }

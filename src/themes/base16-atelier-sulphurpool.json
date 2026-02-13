@@ -1,8 +1,9 @@
 {
   "background": "202746",
   "border": "6b7394",
-  "foreground": "f5f7ff",
+  "foreground": "979db4",
   "name": "Atelier Sulphurpool",
+  "slug": "atelier-sulphurpool",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "dark"
 }

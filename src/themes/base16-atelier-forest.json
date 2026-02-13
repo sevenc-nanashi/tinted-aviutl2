@@ -1,8 +1,9 @@
 {
   "background": "1b1918",
   "border": "766e6b",
-  "foreground": "f1efee",
+  "foreground": "a8a19f",
   "name": "Atelier Forest",
+  "slug": "atelier-forest",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "dark"
 }

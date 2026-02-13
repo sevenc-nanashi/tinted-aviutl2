@@ -1,8 +1,9 @@
 {
   "background": "1b2b34",
   "border": "65737e",
-  "foreground": "d8dee9",
+  "foreground": "c0c5ce",
   "name": "OceanicNext",
+  "slug": "oceanicnext",
   "author": "https://github.com/voronianski/oceanic-next-color-scheme",
   "variant": "dark"
 }

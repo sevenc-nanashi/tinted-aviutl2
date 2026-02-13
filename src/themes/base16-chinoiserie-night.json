@@ -1,8 +1,9 @@
 {
   "background": "1d1d1d",
   "border": "918072",
-  "foreground": "fffef9",
+  "foreground": "c4cbcf",
   "name": "Chinoiserie Night",
+  "slug": "chinoiserie-night",
   "author": "Di Wang (https://cs.cmu.edu/~diw3)",
   "variant": "dark"
 }

@@ -68,3 +68,4 @@ jobs:
           tag_name: ${{ github.event.inputs.version }}
           files: |
             ./release/tinted-aviutl2-v*.au2pkg.zip
+            ./release/catalog.json

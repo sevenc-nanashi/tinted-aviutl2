@@ -1,8 +1,9 @@
 {
   "background": "fdf9f5",
   "border": "5a5a5a",
-  "foreground": "000000",
+  "foreground": "292929",
   "name": "Measured Light",
+  "slug": "measured-light",
   "author": "Measured (https://measured.co)",
   "variant": "light"
 }

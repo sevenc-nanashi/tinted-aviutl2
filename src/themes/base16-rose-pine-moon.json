@@ -1,8 +1,9 @@
 {
   "background": "232136",
   "border": "6e6a86",
-  "foreground": "56526e",
+  "foreground": "e0def4",
   "name": "Rosé Pine Moon",
+  "slug": "rose-pine-moon",
   "author": "Emilia Dunfelt <edun@dunfelt.se>",
   "variant": "dark"
 }

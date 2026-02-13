@@ -1,8 +1,9 @@
 {
   "background": "000000",
   "border": "4f4f4f",
-  "foreground": "ffffff",
+  "foreground": "dcdccc",
   "name": "Cyberpunk",
+  "slug": "cyberpunk",
   "author": "benjujo",
   "variant": "dark"
 }

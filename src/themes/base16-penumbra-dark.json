@@ -1,8 +1,9 @@
 {
   "background": "24272b",
   "border": "636363",
-  "foreground": "fffdfb",
+  "foreground": "bebebe",
   "name": "Penumbra Dark",
+  "slug": "penumbra-dark",
   "author": "Zachary Weiss (https://github.com/zacharyweiss)",
   "variant": "dark"
 }

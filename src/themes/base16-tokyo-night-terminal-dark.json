@@ -1,8 +1,9 @@
 {
   "background": "16161e",
   "border": "444b6a",
-  "foreground": "d5d6db",
+  "foreground": "787c99",
   "name": "Tokyo Night Terminal Dark",
+  "slug": "tokyo-night-terminal-dark",
   "author": "Michaël Ball",
   "variant": "dark"
 }

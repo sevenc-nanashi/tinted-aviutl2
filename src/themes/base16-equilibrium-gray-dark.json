@@ -1,8 +1,9 @@
 {
   "background": "111111",
   "border": "777777",
-  "foreground": "e2e2e2",
+  "foreground": "ababab",
   "name": "Equilibrium Gray Dark",
+  "slug": "equilibrium-gray-dark",
   "author": "Carlo Abelli",
   "variant": "dark"
 }

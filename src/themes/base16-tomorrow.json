@@ -1,8 +1,9 @@
 {
   "background": "ffffff",
   "border": "b4b7b4",
-  "foreground": "1d1f21",
+  "foreground": "373b41",
   "name": "Tomorrow",
+  "slug": "tomorrow",
   "author": "Chris Kempson (http://chriskempson.com)",
   "variant": "light"
 }

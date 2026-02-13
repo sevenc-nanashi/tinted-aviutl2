@@ -1,8 +1,9 @@
 {
   "background": "303446",
   "border": "737994",
-  "foreground": "babbf1",
+  "foreground": "c6d0f5",
   "name": "Catppuccin Frappe",
+  "slug": "catppuccin-frappe",
   "author": "https://github.com/catppuccin/catppuccin",
   "variant": "dark"
 }

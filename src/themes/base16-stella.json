@@ -1,8 +1,9 @@
 {
   "background": "2b213c",
   "border": "655978",
-  "foreground": "ebdcff",
+  "foreground": "998bad",
   "name": "Stella",
+  "slug": "stella",
   "author": "Shrimpram",
   "variant": "dark"
 }

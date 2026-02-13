@@ -1,8 +1,9 @@
 {
   "background": "2d2d2d",
   "border": "747369",
-  "foreground": "f2f0ec",
+  "foreground": "d3d0c8",
   "name": "Eighties",
+  "slug": "eighties",
   "author": "Chris Kempson (http://chriskempson.com)",
   "variant": "dark"
 }

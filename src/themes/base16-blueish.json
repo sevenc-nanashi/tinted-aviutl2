@@ -1,8 +1,9 @@
 {
   "background": "182430",
   "border": "616d78",
-  "foreground": "8f98a0",
+  "foreground": "c8e1f8",
   "name": "Blueish",
+  "slug": "blueish",
   "author": "Ben Mayoras",
   "variant": "dark"
 }

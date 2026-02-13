@@ -1,8 +1,9 @@
 {
   "background": "021012",
   "border": "052e34",
-  "foreground": "109cb0",
+  "foreground": "095b67",
   "name": "Icy Dark",
+  "slug": "icy",
   "author": "icyphox (https://icyphox.ga)",
   "variant": "dark"
 }

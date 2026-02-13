@@ -1,8 +1,9 @@
 {
   "background": "1c2128",
   "border": "545d68",
-  "foreground": "cdd9e5",
+  "foreground": "909dab",
   "name": "Primer Dark Dimmed",
+  "slug": "primer-dark-dimmed",
   "author": "Jimmy Lin",
   "variant": "dark"
 }

@@ -1,8 +1,9 @@
 {
   "background": "000000",
   "border": "434852",
-  "foreground": "c8ccd4",
+  "foreground": "abb2bf",
   "name": "OneDark Dark",
+  "slug": "onedark-dark",
   "author": "olimorris (https://github.com/olimorris)",
   "variant": "dark"
 }

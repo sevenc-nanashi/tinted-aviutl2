@@ -1,8 +1,9 @@
 {
   "background": "151515",
   "border": "505050",
-  "foreground": "ffffff",
+  "foreground": "d0d0d0",
   "name": "Summerfruit Dark",
+  "slug": "summerfruit-dark",
   "author": "Christopher Corley (http://christop.club/)",
   "variant": "dark"
 }

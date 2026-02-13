@@ -1,8 +1,9 @@
 {
   "background": "131513",
   "border": "687d68",
-  "foreground": "f4fbf4",
+  "foreground": "8ca68c",
   "name": "Atelier Seaside",
+  "slug": "atelier-seaside",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "dark"
 }

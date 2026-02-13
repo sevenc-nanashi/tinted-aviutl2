@@ -1,8 +1,9 @@
 {
   "background": "fcfcfc",
   "border": "c0c0c0",
-  "foreground": "000000",
+  "foreground": "545454",
   "name": "Windows High Contrast Light",
+  "slug": "windows-highcontrast-light",
   "author": "Fergus Collins (https://github.com/ferguscollins)",
   "variant": "light"
 }

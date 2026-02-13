@@ -1,8 +1,9 @@
 {
   "background": "f5f0e7",
   "border": "73777f",
-  "foreground": "181c22",
+  "foreground": "43474e",
   "name": "Equilibrium Light",
+  "slug": "equilibrium-light",
   "author": "Carlo Abelli",
   "variant": "light"
 }

@@ -1,8 +1,9 @@
 {
   "background": "2d2d2d",
   "border": "777777",
-  "foreground": "ffffff",
+  "foreground": "cccccc",
   "name": "Decaf",
+  "slug": "decaf",
   "author": "Alex Mirrington (https://github.com/alexmirrington)",
   "variant": "dark"
 }

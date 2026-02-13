@@ -1,8 +1,9 @@
 {
   "background": "232c31",
   "border": "3f4944",
-  "foreground": "b5d8f6",
+  "foreground": "9ea7a6",
   "name": "Codeschool",
+  "slug": "codeschool",
   "author": "blockloop",
   "variant": "dark"
 }

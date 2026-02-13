@@ -1,8 +1,9 @@
 {
   "background": "333c43",
   "border": "859289",
-  "foreground": "f3ead3",
+  "foreground": "d3c6aa",
   "name": "Everforest Dark Soft",
+  "slug": "everforest-dark-soft",
   "author": "Sainnhe Park (https://github.com/sainnhe)",
   "variant": "dark"
 }

@@ -1,8 +1,9 @@
 {
   "background": "000000",
   "border": "808080",
-  "foreground": "ffffff",
+  "foreground": "c0c0c0",
   "name": "Macintosh",
+  "slug": "macintosh",
   "author": "Rebecca Bettencourt (http://www.kreativekorp.com)",
   "variant": "dark"
 }

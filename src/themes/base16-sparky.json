@@ -1,8 +1,9 @@
 {
   "background": "072b31",
   "border": "003b49",
-  "foreground": "ffffff",
+  "foreground": "f4f5f0",
   "name": "Sparky",
+  "slug": "sparky",
   "author": "Leila Sother (https://github.com/mixcoac)",
   "variant": "dark"
 }

@@ -1,8 +1,9 @@
 {
   "background": "171d23",
   "border": "526270",
-  "foreground": "fbfbfd",
+  "foreground": "d8e2ec",
   "name": "Tokyo City Terminal Dark",
+  "slug": "tokyo-city-terminal-dark",
   "author": "Michaël Ball",
   "variant": "dark"
 }

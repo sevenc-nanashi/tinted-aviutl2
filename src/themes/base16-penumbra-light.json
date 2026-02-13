@@ -1,8 +1,9 @@
 {
   "background": "fffdfb",
   "border": "bebebe",
-  "foreground": "24272b",
+  "foreground": "636363",
   "name": "Penumbra Light",
+  "slug": "penumbra-light",
   "author": "Zachary Weiss (https://github.com/zacharyweiss)",
   "variant": "light"
 }

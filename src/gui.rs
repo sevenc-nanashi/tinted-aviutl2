@@ -1,5 +1,5 @@
 use aviutl2_eframe::{AviUtl2EframeHandle, eframe, egui};
-use std::io::Write;
+use std::{io::Write, str::FromStr};
 
 fn tr(text: &str) -> String {
     aviutl2::config::translate(text).unwrap_or_else(|_| text.to_string())
@@ -26,6 +26,8 @@ pub(crate) struct TintedAviutl2App {
     search_query: String,
     version: String,
     handle: AviUtl2EframeHandle,
+    current_theme: Option<(crate::theme::Theme, crate::theme::BaseTemplate)>,
+    selected_template: crate::theme::BaseTemplate,
 }
 
 impl TintedAviutl2App {
@@ -48,12 +50,19 @@ impl TintedAviutl2App {
         });
         cc.egui_ctx.set_fonts(fonts);
 
+        let current_theme = Self::detect_current_theme();
         Self {
             show_info: false,
             suppress_info_close_once: false,
             search_query: String::new(),
             version: env!("CARGO_PKG_VERSION").to_string(),
             handle,
+            selected_template: current_theme
+                .as_ref()
+                .map_or(crate::theme::BaseTemplate::Original, |(_, template)| {
+                    *template
+                }),
+            current_theme,
         }
     }
 }
@@ -99,6 +108,40 @@ impl TintedAviutl2App {
 
     fn render_main_panel(&mut self, ctx: &egui::Context) {
         egui::CentralPanel::default().show(ctx, |ui| {
+            if let Some(current_theme) = &self.current_theme {
+                ui.label(format!(
+                    "{} {}",
+                    tr("現在のテーマ:"),
+                    match current_theme.1 {
+                        crate::theme::BaseTemplate::Original => tr("Original"),
+                        crate::theme::BaseTemplate::Rainbow => tr("Rainbow"),
+                    }
+                ));
+                self.render_theme_card(ui, &current_theme.0);
+                ui.add_space(16.0);
+            }
+            ui.horizontal(|ui| {
+                ui.label(tr("配色:"));
+                egui::ComboBox::from_id_salt("base_template_combo_box")
+                    .selected_text(match self.selected_template {
+                        crate::theme::BaseTemplate::Original => tr("Original"),
+                        crate::theme::BaseTemplate::Rainbow => tr("Rainbow"),
+                    })
+                    .show_ui(ui, |ui| {
+                        ui.selectable_value(
+                            &mut self.selected_template,
+                            crate::theme::BaseTemplate::Original,
+                            tr("Original"),
+                        )
+                        .on_hover_text(tr("オブジェクトの色を元のAviUtl2風にします。"));
+                        ui.selectable_value(
+                            &mut self.selected_template,
+                            crate::theme::BaseTemplate::Rainbow,
+                            tr("Rainbow"),
+                        )
+                        .on_hover_text(tr("オブジェクトの色を種類ごとに変更します。"));
+                    });
+            });
             ui.horizontal(|ui| {
                 ui.label(tr("検索"));
                 ui.add_sized(
@@ -248,22 +291,28 @@ impl TintedAviutl2App {
             && native_dialog::DialogBuilder::message()
                 .set_title(tr("Tinted AviUtl2"))
                 .set_text(tr("このテーマを適用しますか？"))
+                .set_owner(&unsafe { crate::EDIT_HANDLE.get_host_app_window() }.unwrap())
                 .confirm()
                 .show()
                 .unwrap_or(false)
         {
-            self.install_style(theme).unwrap_or_else(|err| {
-                let _ = native_dialog::DialogBuilder::message()
-                    .set_title(tr("エラー"))
-                    .set_text(err)
-                    .set_owner(&unsafe { crate::EDIT_HANDLE.get_host_app_window() }.unwrap())
-                    .alert()
-                    .show();
-            });
+            self.install_style(theme, self.selected_template)
+                .unwrap_or_else(|err| {
+                    let _ = native_dialog::DialogBuilder::message()
+                        .set_title(tr("エラー"))
+                        .set_text(err)
+                        .set_owner(&unsafe { crate::EDIT_HANDLE.get_host_app_window() }.unwrap())
+                        .alert()
+                        .show();
+                });
         }
     }
 
-    fn install_style(&self, theme: &crate::theme::Theme) -> aviutl2::AnyResult<()> {
+    fn install_style(
+        &self,
+        theme: &crate::theme::Theme,
+        base_template: crate::theme::BaseTemplate,
+    ) -> aviutl2::AnyResult<()> {
         let data_dir = aviutl2::config::app_data_path();
         let style_conf_path = data_dir.join("style.conf");
         let existing_style_conf = if style_conf_path.try_exists()? {
@@ -271,8 +320,9 @@ impl TintedAviutl2App {
         } else {
             String::new()
         };
+        let merged_style =
+            crate::merge_style::merge_style(&existing_style_conf, &theme.load(base_template));
         let mut style_conf = std::fs::File::create(&style_conf_path)?;
-        let merged_style = crate::merge_style::merge_style(&existing_style_conf, &theme.load());
         style_conf.write_all(merged_style.as_bytes())?;
 
         if native_dialog::DialogBuilder::message()
@@ -287,5 +337,33 @@ impl TintedAviutl2App {
         }
 
         Ok(())
+    }
+
+    fn detect_current_theme() -> Option<(crate::theme::Theme, crate::theme::BaseTemplate)> {
+        let data_dir = aviutl2::config::app_data_path();
+        let style_conf_path = data_dir.join("style.conf");
+        let existing_style_conf = if style_conf_path.try_exists().ok()? {
+            std::fs::read_to_string(&style_conf_path).ok()?
+        } else {
+            return None;
+        };
+
+        let slug = lazy_regex::lazy_regex!(r"; -- tinted-aviutl2-scheme-slug: (.+);");
+        let template = lazy_regex::lazy_regex!(r"; -- tinted-aviutl2-base-template: (.+);");
+        if let (Some(caps_slug), Some(caps_template)) = (
+            slug.captures(&existing_style_conf),
+            template.captures(&existing_style_conf),
+        ) {
+            let slug = &caps_slug[1];
+            let template = &caps_template[1];
+            let base_template = crate::theme::BaseTemplate::from_str(template).ok()?;
+            let theme = crate::theme::THEMES
+                .iter()
+                .find(|t| t.slug == slug)?
+                .clone();
+            return Some((theme, base_template));
+        }
+
+        None
     }
 }

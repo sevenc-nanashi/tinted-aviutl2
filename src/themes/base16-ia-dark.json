@@ -1,8 +1,9 @@
 {
   "background": "1a1a1a",
   "border": "767676",
-  "foreground": "f8f8f8",
+  "foreground": "cccccc",
   "name": "iA Dark",
+  "slug": "ia-dark",
   "author": "iA Inc. (modified by aramisgithub)",
   "variant": "dark"
 }

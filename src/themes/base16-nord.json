@@ -1,8 +1,9 @@
 {
   "background": "2e3440",
   "border": "4c566a",
-  "foreground": "8fbcbb",
+  "foreground": "e5e9f0",
   "name": "Nord",
+  "slug": "nord",
   "author": "arcticicestudio",
   "variant": "dark"
 }

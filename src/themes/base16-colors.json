@@ -1,8 +1,9 @@
 {
   "background": "111111",
   "border": "777777",
-  "foreground": "ffffff",
+  "foreground": "bbbbbb",
   "name": "Colors",
+  "slug": "colors",
   "author": "mrmrs (http://clrs.cc)",
   "variant": "dark"
 }

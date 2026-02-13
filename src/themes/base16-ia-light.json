@@ -1,8 +1,9 @@
 {
   "background": "f6f6f6",
   "border": "898989",
-  "foreground": "f8f8f8",
+  "foreground": "181818",
   "name": "iA Light",
+  "slug": "ia-light",
   "author": "iA Inc. (modified by aramisgithub)",
   "variant": "light"
 }

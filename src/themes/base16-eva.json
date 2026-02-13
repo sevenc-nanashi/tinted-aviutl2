@@ -1,8 +1,9 @@
 {
   "background": "2a3b4d",
   "border": "55799c",
-  "foreground": "ffffff",
+  "foreground": "9fa2a6",
   "name": "Eva",
+  "slug": "eva",
   "author": "kjakapat (https://github.com/kjakapat)",
   "variant": "dark"
 }

@@ -1,8 +1,9 @@
 {
   "background": "232629",
   "border": "60615d",
-  "foreground": "fcfcfc",
+  "foreground": "f8f8f2",
   "name": "Humanoid dark",
+  "slug": "humanoid-dark",
   "author": "Thomas (tasmo) Friese",
   "variant": "dark"
 }

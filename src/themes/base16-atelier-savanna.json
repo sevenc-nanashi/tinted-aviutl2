@@ -1,8 +1,9 @@
 {
   "background": "171c19",
   "border": "5f6d64",
-  "foreground": "ecf4ee",
+  "foreground": "87928a",
   "name": "Atelier Savanna",
+  "slug": "atelier-savanna",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "dark"
 }

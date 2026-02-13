@@ -1,8 +1,9 @@
 {
   "background": "1e1e1e",
   "border": "5f5a60",
-  "foreground": "ffffff",
+  "foreground": "a7a7a7",
   "name": "Twilight",
+  "slug": "twilight",
   "author": "David Hart (https://github.com/hartbit)",
   "variant": "dark"
 }

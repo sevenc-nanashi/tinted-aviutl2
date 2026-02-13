@@ -1,8 +1,9 @@
 {
   "background": "000000",
   "border": "505050",
-  "foreground": "ffffff",
+  "foreground": "d0d0d0",
   "name": "Pop",
+  "slug": "pop",
   "author": "Chris Kempson (http://chriskempson.com)",
   "variant": "dark"
 }

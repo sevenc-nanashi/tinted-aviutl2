@@ -1,8 +1,9 @@
 {
   "background": "101010",
   "border": "333333",
-  "foreground": "d5d5d5",
+  "foreground": "b7b7b7",
   "name": "Vesper",
+  "slug": "vesper",
   "author": "FormalSnake (https://github.com/formalsnake)",
   "variant": "dark"
 }

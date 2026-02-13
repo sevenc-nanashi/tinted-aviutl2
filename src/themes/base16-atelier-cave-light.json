@@ -1,8 +1,9 @@
 {
   "background": "efecf4",
   "border": "7e7887",
-  "foreground": "19171c",
+  "foreground": "585260",
   "name": "Atelier Cave Light",
+  "slug": "atelier-cave-light",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "light"
 }

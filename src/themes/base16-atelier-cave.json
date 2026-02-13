@@ -1,8 +1,9 @@
 {
   "background": "19171c",
   "border": "655f6d",
-  "foreground": "efecf4",
+  "foreground": "8b8792",
   "name": "Atelier Cave",
+  "slug": "atelier-cave",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "dark"
 }

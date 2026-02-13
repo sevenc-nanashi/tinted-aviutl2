@@ -1,8 +1,9 @@
 {
   "background": "f4f3ec",
   "border": "878573",
-  "foreground": "22221b",
+  "foreground": "5f5e4e",
   "name": "Atelier Estuary Light",
+  "slug": "atelier-estuary-light",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "light"
 }

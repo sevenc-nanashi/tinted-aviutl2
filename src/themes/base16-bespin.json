@@ -1,8 +1,9 @@
 {
   "background": "28211c",
   "border": "666666",
-  "foreground": "baae9e",
+  "foreground": "8a8986",
   "name": "Bespin",
+  "slug": "bespin",
   "author": "Jan T. Sott",
   "variant": "dark"
 }

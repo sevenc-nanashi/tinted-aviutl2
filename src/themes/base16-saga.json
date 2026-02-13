@@ -1,8 +1,9 @@
 {
   "background": "05080a",
   "border": "141f27",
-  "foreground": "ccd3fe",
+  "foreground": "dce2f7",
   "name": "SAGA",
+  "slug": "saga",
   "author": "https://github.com/SAGAtheme/SAGA",
   "variant": "dark"
 }

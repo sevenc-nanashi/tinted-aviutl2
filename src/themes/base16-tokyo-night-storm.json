@@ -1,8 +1,9 @@
 {
   "background": "24283b",
   "border": "444b6a",
-  "foreground": "d5d6db",
+  "foreground": "a9b1d6",
   "name": "Tokyo Night Storm",
+  "slug": "tokyo-night-storm",
   "author": "Michaël Ball",
   "variant": "dark"
 }

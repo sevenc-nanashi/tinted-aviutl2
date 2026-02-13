@@ -1,8 +1,9 @@
 {
   "background": "faf0dc",
   "border": "585858",
-  "foreground": "000000",
+  "foreground": "181818",
   "name": "Da One Paper",
+  "slug": "da-one-paper",
   "author": "NNB (https://github.com/NNBnh)",
   "variant": "light"
 }

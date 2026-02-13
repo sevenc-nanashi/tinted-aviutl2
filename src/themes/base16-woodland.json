@@ -1,8 +1,9 @@
 {
   "background": "231e18",
   "border": "9d8b70",
-  "foreground": "e4d4c8",
+  "foreground": "cabcb1",
   "name": "Woodland",
+  "slug": "woodland",
   "author": "Jay Cornwall (https://jcornwall.com)",
   "variant": "dark"
 }

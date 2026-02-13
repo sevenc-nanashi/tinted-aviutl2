@@ -1,8 +1,9 @@
 {
   "background": "282828",
   "border": "665c54",
-  "foreground": "fbf1c7",
+  "foreground": "d5c4a1",
   "name": "Gruvbox dark, medium",
+  "slug": "gruvbox-dark-medium",
   "author": "Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)",
   "variant": "dark"
 }

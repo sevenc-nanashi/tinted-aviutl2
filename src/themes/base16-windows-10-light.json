@@ -1,8 +1,9 @@
 {
   "background": "f2f2f2",
   "border": "cccccc",
-  "foreground": "0c0c0c",
+  "foreground": "767676",
   "name": "Windows 10 Light",
+  "slug": "windows-10-light",
   "author": "Fergus Collins (https://github.com/ferguscollins)",
   "variant": "light"
 }

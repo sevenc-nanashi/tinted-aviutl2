@@ -1,8 +1,9 @@
 {
   "background": "151718",
   "border": "41535b",
-  "foreground": "ffffff",
+  "foreground": "d6d6d6",
   "name": "Seti UI",
+  "slug": "seti",
   "author": "",
   "variant": "dark"
 }

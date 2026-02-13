@@ -1,8 +1,9 @@
 {
   "background": "2d353b",
   "border": "859289",
-  "foreground": "fdf6e3",
+  "foreground": "d3c6aa",
   "name": "Everforest",
+  "slug": "everforest",
   "author": "Sainnhe Park (https://github.com/sainnhe)",
   "variant": "dark"
 }

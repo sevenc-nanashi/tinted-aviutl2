@@ -1,8 +1,9 @@
 {
   "background": "fbf1c7",
   "border": "bdae93",
-  "foreground": "282828",
+  "foreground": "504945",
   "name": "Gruvbox light, medium",
+  "slug": "gruvbox-light-medium",
   "author": "Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)",
   "variant": "light"
 }

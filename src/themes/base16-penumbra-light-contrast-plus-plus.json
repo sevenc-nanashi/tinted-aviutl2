@@ -1,8 +1,9 @@
 {
   "background": "fffdfb",
   "border": "dedede",
-  "foreground": "0d0f13",
+  "foreground": "636363",
   "name": "Penumbra Light Contrast Plus Plus",
+  "slug": "penumbra-light-contrast-plus-plus",
   "author": "Zachary Weiss (https://github.com/zacharyweiss)",
   "variant": "light"
 }

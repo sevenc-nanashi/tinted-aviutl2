@@ -1,8 +1,9 @@
 {
   "background": "212337",
   "border": "7081d0",
-  "foreground": "ffffff",
+  "foreground": "ebfafa",
   "name": "Eldritch",
+  "slug": "eldritch",
   "author": "https://github.com/eldritch-theme",
   "variant": "dark"
 }

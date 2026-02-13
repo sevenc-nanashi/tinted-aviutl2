@@ -1,8 +1,9 @@
 {
   "background": "eff1f5",
   "border": "9ca0b0",
-  "foreground": "7287fd",
+  "foreground": "4c4f69",
   "name": "Catppuccin Latte",
+  "slug": "catppuccin-latte",
   "author": "https://github.com/catppuccin/catppuccin",
   "variant": "light"
 }

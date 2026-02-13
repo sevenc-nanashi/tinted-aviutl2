@@ -1,8 +1,9 @@
 {
   "background": "1e0528",
   "border": "320f55",
-  "foreground": "f8c0ff",
+  "foreground": "ffeeff",
   "name": "Mellow Purple",
+  "slug": "mellow-purple",
   "author": "gidsi",
   "variant": "dark"
 }

@@ -1,8 +1,9 @@
 {
   "background": "2d2d2d",
   "border": "999999",
-  "foreground": "ffffff",
+  "foreground": "cccccc",
   "name": "Tomorrow Night Eighties",
+  "slug": "tomorrow-night-eighties",
   "author": "Chris Kempson (http://chriskempson.com)",
   "variant": "dark"
 }

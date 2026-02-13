@@ -1,8 +1,9 @@
 {
   "background": "fdf0ed",
   "border": "bdb3b1",
-  "foreground": "201c1d",
+  "foreground": "403c3d",
   "name": "Horizon Light",
+  "slug": "horizon-light",
   "author": "Michaël Ball (http://github.com/michael-ball/)",
   "variant": "light"
 }

@@ -1,8 +1,9 @@
 {
   "background": "fcfefd",
   "border": "cad8d2",
-  "foreground": "2d302f",
+  "foreground": "5a605d",
   "name": "DanQing Light",
+  "slug": "danqing-light",
   "author": "Wenhan Zhu (Cosmos) (zhuwenhan950913@gmail.com)",
   "variant": "light"
 }

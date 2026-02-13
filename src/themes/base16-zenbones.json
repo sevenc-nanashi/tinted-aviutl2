@@ -1,8 +1,9 @@
 {
   "background": "191919",
   "border": "b77e64",
-  "foreground": "bbbbbb",
+  "foreground": "b279a7",
   "name": "Zenbones",
+  "slug": "zenbones",
   "author": "mcchrish",
   "variant": "dark"
 }

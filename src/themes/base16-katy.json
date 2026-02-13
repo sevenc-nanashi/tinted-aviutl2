@@ -1,8 +1,9 @@
 {
   "background": "292d3e",
   "border": "676e95",
-  "foreground": "ffffff",
+  "foreground": "959dcb",
   "name": "Katy",
+  "slug": "katy",
   "author": "George Essig (https://github.com/gessig)",
   "variant": "dark"
 }

@@ -1,8 +1,9 @@
 {
   "background": "000000",
   "border": "545454",
-  "foreground": "fcfcfc",
+  "foreground": "a8a8a8",
   "name": "Windows 95",
+  "slug": "windows-95",
   "author": "Fergus Collins (https://github.com/ferguscollins)",
   "variant": "dark"
 }

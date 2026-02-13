@@ -7,11 +7,9 @@ version = "0.13.8"
 backend = "cargo:cargo-edit"
 
 [[tools."github:sevenc-nanashi/aviutl2-cli"]]
-version = "0.3.0"
+version = "0.5.0-preview.2"
 backend = "github:sevenc-nanashi/aviutl2-cli"
-"platforms.linux-arm64" = { checksum = "sha256:d4d74683406856cddc894121f3183ee748ccdb6a5ea03da5cadd01c09344023a", url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.3.0/au2-v0.3.0-linux", url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/350298811"}
-"platforms.linux-x64" = { checksum = "sha256:d4d74683406856cddc894121f3183ee748ccdb6a5ea03da5cadd01c09344023a", url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.3.0/au2-v0.3.0-linux", url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/350298811"}
-"platforms.windows-x64" = { checksum = "sha256:21e963debd482cd0ba87805bb922ba4931f362eca29cc777057178f4b8abfc8d", url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.3.0/au2-v0.3.0-windows.exe", url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/350298945"}
+"platforms.windows-x64" = { checksum = "sha256:89e16ab1346fe8edb71441e2f3795dbdf3ee391e6a3787470c9f1325af5563ac", url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.5.0-preview.2/au2-v0.5.0-preview.2-windows.exe", url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/355220411"}
 
 [[tools."github:tinted-theming/tinted-builder-rust"]]
 version = "0.14.1"
@@ -21,3 +19,7 @@ backend = "github:tinted-theming/tinted-builder-rust"
 "platforms.macos-arm64" = { checksum = "sha256:8d6bd2cf0044be8059572282135d2ad613ca955f18b81f3eb91ce393cb021b52", url = "https://github.com/tinted-theming/tinted-builder-rust/releases/download/v0.14.1/tinted-builder-rust-aarch64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/tinted-theming/tinted-builder-rust/releases/assets/348205023"}
 "platforms.macos-x64" = { checksum = "sha256:d808df0ac63015c8d8a9d6bbe3f359d68dd33106d54ce488fa4d4769bed8f32c", url = "https://github.com/tinted-theming/tinted-builder-rust/releases/download/v0.14.1/tinted-builder-rust-x86_64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/tinted-theming/tinted-builder-rust/releases/assets/348204636"}
 "platforms.windows-x64" = { checksum = "sha256:6c7f34a9dca83dd65b77495696b4b5e054279e5cbad66755769c0a3253d71dc2", url = "https://github.com/tinted-theming/tinted-builder-rust/releases/download/v0.14.1/tinted-builder-rust-x86_64-pc-windows-msvc.zip", url_api = "https://api.github.com/repos/tinted-theming/tinted-builder-rust/releases/assets/348205840"}
+
+[[tools.ruby]]
+version = "4.0.1"
+backend = "core:ruby"

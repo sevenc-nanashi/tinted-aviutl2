@@ -1,8 +1,9 @@
 {
   "background": "211e2a",
   "border": "6e6780",
-  "foreground": "ffffff",
+  "foreground": "e4dee9",
   "name": "Soft Server",
+  "slug": "soft-server",
   "author": "FredHappyface (https://github.com/fredHappyface)",
   "variant": "dark"
 }

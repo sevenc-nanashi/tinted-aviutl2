@@ -1,8 +1,9 @@
 {
   "background": "fffcf0",
   "border": "cecdc3",
-  "foreground": "100f0f",
+  "foreground": "403e3c",
   "name": "Flexoki Light",
+  "slug": "flexoki-light",
   "author": "Steph Ango (https://github.com/kepano/flexoki)",
   "variant": "light"
 }

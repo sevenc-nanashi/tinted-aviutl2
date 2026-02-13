@@ -1,8 +1,9 @@
 {
   "background": "f8f8f2",
   "border": "c0c0bd",
-  "foreground": "070708",
+  "foreground": "232629",
   "name": "Humanoid light",
+  "slug": "humanoid-light",
   "author": "Thomas (tasmo) Friese",
   "variant": "light"
 }

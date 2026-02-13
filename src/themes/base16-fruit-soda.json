@@ -1,8 +1,9 @@
 {
   "background": "f1ecf1",
   "border": "b5b4b6",
-  "foreground": "2d2c2c",
+  "foreground": "515151",
   "name": "Fruit Soda",
+  "slug": "fruit-soda",
   "author": "jozip",
   "variant": "light"
 }

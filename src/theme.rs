@@ -5,11 +5,32 @@ pub enum ThemeVariant {
     Dark,
 }
 
+#[derive(
+    Debug,
+    Clone,
+    Copy,
+    PartialEq,
+    Eq,
+    Hash,
+    strum::EnumString,
+    strum::EnumIter,
+    strum::Display,
+    serde::Serialize,
+    serde::Deserialize,
+)]
+#[serde(rename_all = "lowercase")]
+#[strum(serialize_all = "kebab-case")]
+pub enum BaseTemplate {
+    Original,
+    Rainbow,
+}
+
 #[derive(Debug, Clone, PartialEq, Eq, Hash, serde::Serialize, serde::Deserialize)]
 pub struct Theme {
     #[serde(skip)]
     file: String,
 
+    pub slug: String,
     pub name: String,
     pub author: String,
 
@@ -21,7 +42,7 @@ pub struct Theme {
 }
 
 static THEME_INFOS: include_dir::Dir = include_dir::include_dir!("$CARGO_MANIFEST_DIR/src/themes");
-static THEME_CONFS: include_dir::Dir = include_dir::include_dir!("$CARGO_MANIFEST_DIR/generated");
+static THEME_CONFS: include_dir::Dir = include_dir::include_dir!("$CARGO_MANIFEST_DIR/themes");
 
 pub static THEMES: std::sync::LazyLock<Vec<Theme>> = std::sync::LazyLock::new(|| {
     let mut themes = Vec::new();
@@ -40,16 +61,16 @@ pub static THEMES: std::sync::LazyLock<Vec<Theme>> = std::sync::LazyLock::new(||
                 .unwrap()
                 .to_string_lossy()
                 .to_string();
-            themes.push(aviutl2::ldbg!(theme));
+            themes.push(theme);
         }
     }
 
     themes
 });
 impl Theme {
-    pub fn load(&self) -> String {
+    pub fn load(&self, template: BaseTemplate) -> String {
         let file = THEME_CONFS
-            .get_file(format!("{}.style.conf", self.file))
+            .get_file(format!("{}/{}.style.conf", template, self.file))
             .expect("Failed to get theme config file");
         let content = file
             .contents_utf8()

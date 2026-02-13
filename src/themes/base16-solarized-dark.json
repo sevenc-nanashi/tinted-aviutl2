@@ -1,8 +1,9 @@
 {
   "background": "002b36",
   "border": "657b83",
-  "foreground": "fdf6e3",
+  "foreground": "93a1a1",
   "name": "Solarized Dark",
+  "slug": "solarized-dark",
   "author": "Ethan Schoonover (modified by aramisgithub)",
   "variant": "dark"
 }

@@ -1,8 +1,9 @@
 {
   "background": "f7f9fb",
   "border": "aabcce",
-  "foreground": "0b1c2c",
+  "foreground": "405c79",
   "name": "Harmonic16 Light",
+  "slug": "harmonic16-light",
   "author": "Jannik Siebert (https://github.com/janniks)",
   "variant": "light"
 }

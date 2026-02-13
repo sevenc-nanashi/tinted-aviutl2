@@ -1,8 +1,9 @@
 {
   "background": "2e2a31",
   "border": "838085",
-  "foreground": "f5f4f7",
+  "foreground": "bcbabe",
   "name": "Unikitty Dark",
+  "slug": "unikitty-dark",
   "author": "Josh W Lewis (@joshwlewis)",
   "variant": "dark"
 }

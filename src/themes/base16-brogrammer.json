@@ -1,8 +1,9 @@
 {
   "background": "1f1f1f",
   "border": "ecba0f",
-  "foreground": "d6dbe5",
+  "foreground": "4e5ab7",
   "name": "Brogrammer",
+  "slug": "brogrammer",
   "author": "Vik Ramanujam (http://github.com/piggyslasher)",
   "variant": "dark"
 }

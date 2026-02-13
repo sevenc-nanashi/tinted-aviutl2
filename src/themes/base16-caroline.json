@@ -1,8 +1,9 @@
 {
   "background": "1c1213",
   "border": "6d4745",
-  "foreground": "e3a68c",
+  "foreground": "a87569",
   "name": "caroline",
+  "slug": "caroline",
   "author": "ed (https://codeberg.org/ed)",
   "variant": "dark"
 }

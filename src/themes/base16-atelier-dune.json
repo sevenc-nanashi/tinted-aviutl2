@@ -1,8 +1,9 @@
 {
   "background": "20201d",
   "border": "7d7a68",
-  "foreground": "fefbec",
+  "foreground": "a6a28c",
   "name": "Atelier Dune",
+  "slug": "atelier-dune",
   "author": "Bram de Haan (http://atelierbramdehaan.nl)",
   "variant": "dark"
 }

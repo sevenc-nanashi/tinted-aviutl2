@@ -1,8 +1,9 @@
 {
   "background": "282c34",
   "border": "665c54",
-  "foreground": "fdf4c1",
+  "foreground": "a89984",
   "name": "Sandcastle",
+  "slug": "sandcastle",
   "author": "George Essig (https://github.com/gessig)",
   "variant": "dark"
 }

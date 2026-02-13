@@ -1,8 +1,9 @@
 {
   "background": "e5e9f0",
   "border": "aebacf",
-  "foreground": "29838d",
+  "foreground": "2e3440",
   "name": "Nord Light",
+  "slug": "nord-light",
   "author": "threddast, based on fuxialexander's doom-nord-light-theme (Doom Emacs)",
   "variant": "light"
 }

@@ -1,8 +1,9 @@
 {
   "background": "282a36",
   "border": "6272a4",
-  "foreground": "ffffff",
+  "foreground": "f8f8f2",
   "name": "Dracula",
+  "slug": "dracula",
   "author": "Jamy Golden (http://github.com/JamyGolden), based on Dracula Theme (http://github.com/dracula)",
   "variant": "dark"
 }
