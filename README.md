@@ -22,7 +22,7 @@
 
 |                       `original`                       |                      `rainbow`                       |
 | :----------------------------------------------------: | :--------------------------------------------------: |
-| ![original theme preview](./demo/original_preview.png) | ![rainbow theme preview](./demo/rainbow_preview.png) |
+| ![original theme preview](./demo/preview_original.png) | ![rainbow theme preview](./demo/preview_rainbow.png) |
 
 ## 使い方
 
