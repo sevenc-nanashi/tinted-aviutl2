@@ -2464,7 +2464,7 @@ dependencies = [
 
 [[package]]
 name = "tinted-aviutl2"
-version = "0.2.3"
+version = "0.2.4"
 dependencies = [
  "aviutl2",
  "aviutl2-eframe",
