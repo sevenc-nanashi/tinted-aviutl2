@@ -1,9 +1,6 @@
+use aviutl2::config::translate as tr;
 use aviutl2_eframe::{AviUtl2EframeHandle, eframe, egui};
 use std::{io::Write, str::FromStr};
-
-fn tr(text: &str) -> String {
-    aviutl2::config::translate(text).unwrap_or_else(|_| text.to_string())
-}
 
 fn color_from_theme(hex: &str, fallback: egui::Color32) -> egui::Color32 {
     let trimmed = hex.trim();

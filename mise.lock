@@ -7,9 +7,9 @@ version = "0.13.8"
 backend = "cargo:cargo-edit"
 
 [[tools."github:sevenc-nanashi/aviutl2-cli"]]
-version = "0.5.0-preview.2"
+version = "0.6.3"
 backend = "github:sevenc-nanashi/aviutl2-cli"
-"platforms.windows-x64" = { checksum = "sha256:89e16ab1346fe8edb71441e2f3795dbdf3ee391e6a3787470c9f1325af5563ac", url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.5.0-preview.2/au2-v0.5.0-preview.2-windows.exe", url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/355220411"}
+"platforms.windows-x64" = { checksum = "sha256:b4006f3026cdfdc279da354cf1724f6dd5ef8cd3618ed0923e857757bb896ea6", url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.6.3/au2-v0.6.3-windows.exe", url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/360671600"}
 
 [[tools."github:tinted-theming/tinted-builder-rust"]]
 version = "0.14.1"

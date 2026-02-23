@@ -7,8 +7,8 @@ edition = "2024"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-aviutl2 = "0.16.0"
-aviutl2-eframe = "0.16.0"
+aviutl2 = "0.18.0"
+aviutl2-eframe = "0.18.0"
 dedent = "0.1.1"
 include_dir = "0.7.4"
 lazy-regex = "3.5.1"
