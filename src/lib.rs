@@ -18,6 +18,16 @@ impl aviutl2::generic::GenericPlugin for TintedAviutl2 {
         Ok(Self { window })
     }
 
+    fn plugin_info(&self) -> aviutl2::generic::GenericPluginTable {
+        aviutl2::generic::GenericPluginTable {
+            name: "tinted_aviutl2.aux2".to_string(),
+            information: format!(
+                "tinted-theming for AviUtl2 / v{} / https://github.com/sevenc-nanashi/tinted-aviutl2",
+                env!("CARGO_PKG_VERSION")
+            ),
+        }
+    }
+
     fn register(&mut self, registry: &mut aviutl2::generic::HostAppHandle) {
         registry
             .register_window_client("Tinted AviUtl2", &self.window)

@@ -36,6 +36,7 @@ aviutl2_version = "latest"
 [release]
 prebuild = ["cargo about generate ./about.hbs -o ./release/package.txt"]
 package_template = "./release/package.txt"
+package_information = "{name} v{version} / tinted-theming をAviUtl2で使うプラグイン"
 zip_name = "tinted-aviutl2-v{version}.au2pkg.zip"
 
 [catalog]
