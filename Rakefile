@@ -62,3 +62,16 @@ task generate: :generate_templates do
     File.write("./themes/#{base}/#{File.basename(conf)}", content)
   end
 end
+
+task :check_keys do
+  original_keys = File.read("./.aviutl2-cli/development/style.conf").match(/\[Color\].*?(?=\[)/m)[0].scan(/^([A-Za-z0-9_]+)=/m).flatten
+  template_keys = File.read("./templates/base.mustache").scan(/^([A-Za-z0-9_]+)=/m).flatten
+  missing_keys = original_keys - template_keys
+  if missing_keys.any?
+    puts "The following keys are missing in the template:"
+    missing_keys.each { |key| puts "  - #{key}" }
+    exit(1)
+  else
+    puts "All keys are present in the template."
+  end
+end
