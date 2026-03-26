@@ -7,6 +7,7 @@
 # tinted-aviutl2
 
 [![AviUtl2 Catalog](https://aviutl2-catalog-badge.sevenc7c.workers.dev/badge/v/sevenc-nanashi.tinted-aviutl2)](https://aviutl2-catalog-badge.sevenc7c.workers.dev/package/sevenc-nanashi.tinted-aviutl2)
+[![sm45904404](https://niconi-commons-badge.sevenc7c.workers.dev/badge/sm45904404)](https://commons.nicovideo.jp/works/sm45904404)
 
 [tinted-theming](https://github.com/tinted-theming/home#tinted-theming-all-your-themes-everywhere-) をAviUtl2で使うためのテンプレート。
 
