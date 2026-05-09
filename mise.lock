@@ -27,6 +27,35 @@ checksum = "sha256:2154f8f79d16cecbb5c6f0e647fe2eb3ae4352287957aee112c8ddffdd5c3
 url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.7.0/au2-v0.7.0-windows.exe"
 url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/364138860"
 
+[[tools."github:sevenc-nanashi/aviutl2-cli"]]
+version = "0.8.2"
+backend = "github:sevenc-nanashi/aviutl2-cli"
+
+[tools."github:sevenc-nanashi/aviutl2-cli"."platforms.linux-arm64"]
+checksum = "sha256:a975f0311a4dab46962fd96bddfdc5e4a178ca1cd6d43a32b76fd96e577832e8"
+url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.8.2/au2-v0.8.2-linux"
+url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/391520741"
+
+[tools."github:sevenc-nanashi/aviutl2-cli"."platforms.linux-arm64-musl"]
+checksum = "sha256:a975f0311a4dab46962fd96bddfdc5e4a178ca1cd6d43a32b76fd96e577832e8"
+url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.8.2/au2-v0.8.2-linux"
+url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/391520741"
+
+[tools."github:sevenc-nanashi/aviutl2-cli"."platforms.linux-x64"]
+checksum = "sha256:a975f0311a4dab46962fd96bddfdc5e4a178ca1cd6d43a32b76fd96e577832e8"
+url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.8.2/au2-v0.8.2-linux"
+url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/391520741"
+
+[tools."github:sevenc-nanashi/aviutl2-cli"."platforms.linux-x64-musl"]
+checksum = "sha256:a975f0311a4dab46962fd96bddfdc5e4a178ca1cd6d43a32b76fd96e577832e8"
+url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.8.2/au2-v0.8.2-linux"
+url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/391520741"
+
+[tools."github:sevenc-nanashi/aviutl2-cli"."platforms.windows-x64"]
+checksum = "sha256:a5ed78a19ebabb271864e6cd12b8294e5eb2c39ea7bd4cf2866f39687e9bab5e"
+url = "https://github.com/sevenc-nanashi/aviutl2-cli/releases/download/0.8.2/au2-v0.8.2-windows.exe"
+url_api = "https://api.github.com/repos/sevenc-nanashi/aviutl2-cli/releases/assets/391520740"
+
 [[tools."github:tinted-theming/tinted-builder-rust"]]
 version = "0.20.1"
 backend = "github:tinted-theming/tinted-builder-rust"
