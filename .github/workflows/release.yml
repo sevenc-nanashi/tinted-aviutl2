@@ -48,7 +48,7 @@ jobs:
         shell: bash
         run: |
           tinted-builder-rust sync
-          au2 release --set-version ${{ github.event.inputs.version }}
+          mise exec -- au2 release --set-version ${{ github.event.inputs.version }}
 
       - name: Commit version change
         run: |
