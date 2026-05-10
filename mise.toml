@@ -1,6 +1,6 @@
 [tools]
 "github:tinted-theming/tinted-builder-rust" = "latest"
 "github:sevenc-nanashi/aviutl2-cli" = { version = "0.8.2", bin = "au2.exe" }
-"cargo:cargo-about" = "latest"
+"github:EmbarkStudios/cargo-about" = "latest"
 "cargo:cargo-edit" = "latest"
 ruby = "latest"
