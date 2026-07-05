@@ -66,6 +66,8 @@ end
 task :check_keys do
   original_keys = File.read("./.aviutl2-cli/development/style.conf").match(/\[Color\].*?(?=\[)/m)[0].scan(/^([A-Za-z0-9_]+)=/m).flatten
   template_keys = File.read("./templates/base.mustache").scan(/^([A-Za-z0-9_]+)=/m).flatten
+  puts "Original: #{original_keys.size} keys"
+  puts "Template: #{template_keys.size} keys"
   missing_keys = original_keys - template_keys
   if missing_keys.any?
     puts "The following keys are missing in the template:"
