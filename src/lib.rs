@@ -29,9 +29,11 @@ impl aviutl2::generic::GenericPlugin for TintedAviutl2 {
     }
 
     fn register(&mut self, registry: &mut aviutl2::generic::HostAppHandle) {
-        registry
-            .register_window_client("Tinted AviUtl2", &self.window)
-            .unwrap();
+        if let Ok(handle) = self.window.handle() {
+            registry
+                .register_window_client("Tinted AviUtl2", &handle)
+                .unwrap();
+        }
         EDIT_HANDLE.init(registry.create_edit_handle());
     }
 }

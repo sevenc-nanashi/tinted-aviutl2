@@ -65,17 +65,16 @@ impl TintedAviutl2App {
 }
 
 impl eframe::App for TintedAviutl2App {
-    fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
-        self.render_toolbar(ctx);
-        self.render_main_panel(ctx);
-        self.render_info_window(ctx);
+    fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
+        self.render_toolbar(ui);
+        self.render_main_panel(ui);
+        self.render_info_window(ui);
     }
 }
 
 impl TintedAviutl2App {
-    fn render_toolbar(&mut self, ctx: &egui::Context) {
-        // TODO: toolbarの右クリックイベントに右クリックメニューを割り当てる
-        egui::TopBottomPanel::top("toolbar").show(ctx, |ui| {
+    fn render_toolbar(&mut self, ui: &mut egui::Ui) {
+        egui::Panel::top("toolbar").show(ui, |ui| {
             ui.horizontal(|ui| {
                 let clicked = ui
                     .heading("Tinted AviUtl2 Themes")
@@ -103,8 +102,8 @@ impl TintedAviutl2App {
         });
     }
 
-    fn render_main_panel(&mut self, ctx: &egui::Context) {
-        egui::CentralPanel::default().show(ctx, |ui| {
+    fn render_main_panel(&mut self, ui: &mut egui::Ui) {
+        egui::CentralPanel::default().show(ui, |ui| {
             if let Some(current_theme) = &self.current_theme {
                 ui.label(format!(
                     "{} {}",
@@ -173,16 +172,16 @@ impl TintedAviutl2App {
         });
     }
 
-    fn render_info_window(&mut self, ctx: &egui::Context) {
+    fn render_info_window(&mut self, ui: &mut egui::Ui) {
         if !self.show_info {
             return;
         }
-        let screen_rect = ctx.content_rect();
+        let screen_rect = ui.ctx().content_rect();
         let dim_color = egui::Color32::from_black_alpha(128);
         let dim_response = egui::Area::new(egui::Id::new("info_window_dim_layer"))
             .order(egui::Order::Middle)
             .fixed_pos(screen_rect.min)
-            .show(ctx, |ui| {
+            .show(ui.ctx(), |ui| {
                 ui.set_min_size(screen_rect.size());
                 let (rect, response) =
                     ui.allocate_exact_size(screen_rect.size(), egui::Sense::click());
@@ -198,7 +197,7 @@ impl TintedAviutl2App {
             .open(&mut open)
             .anchor(egui::Align2::CENTER_CENTER, egui::vec2(0.0, 0.0))
             .order(egui::Order::Foreground)
-            .show(ctx, |ui| {
+            .show(ui.ctx(), |ui| {
                 let version_label = tr("バージョン: {version}");
                 ui.label(version_label.replace("{version}", &self.version));
                 ui.label(tr("Tinted ThemesのAviUtl2移植版。"));
